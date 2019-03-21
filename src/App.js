@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import UserInput from './UserInput/UserInput';
 import UserOutput from './UserOutput/UserOutput';
+import './bootstrap.min.css';
 
 class App extends Component {
   state = {
@@ -21,12 +22,12 @@ switchUserNameHandler = (event) => {
     return (
      
       <div className="App">
-       <head>
+       {/* <head>
        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" 
 integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" 
 crossorigin="anonymous"></link>
           
-       </head>
+       </head> */}
        <h1>Primera tarea de REACT</h1>
         {/* 1 componente UserInput */}
        <UserInput changed={this.switchUserNameHandler}></UserInput>
